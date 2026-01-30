@@ -57,13 +57,13 @@
                     <div class="pos-builder">
 
                         <div class="builder-header">
-                            <span class="builder-title">Registrar Compra (Entrada)</span>
+                            <span class="builder-title">Registrar Nueva Compra</span>
                         </div>
 
                         <div class="builder-body">
 
                             <div class="form-grid">
-                                <div class="form-group">
+                                <div class="form-group form-full">
                                     <label>Proveedor <span style="color:red">*</span></label>
                                     <div class="input-group">
                                         <select class="form-select">
@@ -72,10 +72,6 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Nro. Factura / Control</label>
-                                    <input type="text" class="form-input" placeholder="Ej: 000-45892">
-                                </div>
                             </div>
 
                             <div class="form-grid">
@@ -86,7 +82,7 @@
                                     </select>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group form-full">
                                     <label>Presentación</label>
                                     <select class="form-select">
                                         <option selected">Seleccione presentacion...</option>
@@ -94,7 +90,12 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Costo de Compra</label>
+                                    <label>Costo de Compra en USD</label>
+                                    <input type="text" class="form-input" value="$ 0.00">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Costo de Compra en Bs</label>
                                     <input type="text" class="form-input" value="$ 0.00">
                                 </div>
                             </div>
@@ -126,7 +127,7 @@
                                 <div class="form-group">
                                     <label>&nbsp;</label>
                                     <button class="btn-add-item">
-                                        ⬇ Cargar al Inventario
+                                        Cargar al Inventario
                                     </button>
                                 </div>
                             </div>
@@ -135,9 +136,12 @@
                     </div>
 
                     <div class="pos-ticket">
-                        <div class="ticket-header" style="background-color: #5c636a;"> <h3>Orden de Compra</h3>
+                        <div class="ticket-header" style="background-color: #83c47a;"> 
+                            <h3>
+                                Factura C2600002
+                            </h3>
                             <div class="ticket-info">
-                                <span>Fecha: 14/01/2026</span>
+                                <span>Fecha: 14/12/2025</span>
                                 <span>Usuario: Abel</span>
                             </div>
                         </div>
@@ -172,14 +176,14 @@
 
                         <div class="ticket-footer">
                             <div class="total-row">
-                                <span>Total Items</span>
+                                <span>Total de Helados</span>
                                 <span>24 Unidades</span>
                             </div>
                             <div class="total-row final">
                                 <span>Total Costo</span>
                                 <span>$180.00</span>
                             </div>
-                            <button class="btn-checkout" style="background-color: #5c636a;">
+                            <button class="btn-checkout">
                                 GUARDAR COMPRA
                             </button>
                         </div>
