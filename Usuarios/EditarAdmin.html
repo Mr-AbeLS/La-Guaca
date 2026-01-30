@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario - La Guaca</title>
+    <link rel="stylesheet" href="../css/Dashboard.css">
+</head>
+<body class="dashboard-page">
+
+    <header class="main-header">
+        <div class="header-logo">
+            <img src="../img/LaGuaca-logo-Remastering.png" class="logo" alt="Logo">
+        </div>
+        <div class="header-user">
+            <div class="user-info">
+                <img src="../img/User-000000.png" class="user-avatar">
+                <span class="user-name">Abel León</span>
+            </div>
+            <div class="user-actions">
+                <button class="btn-header btn-edit">Editar</button>
+                <button class="btn-header btn-logout">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">PRINCIPAL</div>
+                <span class="nav-item">Dashboard</span>
+
+                <div class="nav-section">COMERCIAL</div>
+                <span class="nav-item">Nueva Venta</span>
+                <span class="nav-item">Nueva Compra</span>
+                <span class="nav-item">Historial / Facturas</span>
+                <span class="nav-item">Clientes / Proveedores</span>
+
+                <div class="nav-section">CATÁLOGO</div>
+                <span class="nav-item">Helados</span>
+                <span class="nav-item">Presentaciones</span>
+                <span class="nav-item">Sabores</span>
+
+                <div class="nav-section">SISTEMA</div>
+                <span class="nav-item active">Usuarios</span>
+            </nav>
+        </aside>
+
+        <div class="main">
+            <main class="dashboard-content">
+                
+                <div class="crm-container">
+
+                    <div class="crm-form-panel" style="border-top: 4px solid #ffc107;"> <div class="builder-header">
+                            <span class="builder-title">Editar Usuario</span>
+                            <small style="display:block; color:#888; font-size: 0.8rem; margin-top: 2px;">Editando: Abel León</small>
+                        </div>
+                        
+                        <div class="builder-body">
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Nombre <span style="color:red">*</span></label>
+                                    <input type="text" class="form-input" value="Abel">
+                                </div>
+                                <div class="form-group">
+                                    <label>Apellido <span style="color:red">*</span></label>
+                                    <input type="text" class="form-input" value="León">
+                                </div>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Cédula (C.I)</label>
+                                    <input type="text" class="form-input" value="12345678" readonly style="background-color: #e9ecef; cursor: not-allowed;">
+                                </div>
+                                <div class="form-group">
+                                    <label>Rol de Acceso</label>
+                                    <select class="form-select">
+                                        <option value="trabajador">Trabajador</option>
+                                        <option value="admin" selected>Administrador</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Correo Electrónico</label>
+                                <input type="email" class="form-input" value="abel@laguaca.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Teléfono</label>
+                                <input type="tel" class="form-input" value="0414-5558899">
+                            </div>
+
+                            <hr style="border: 0; border-top: 1px dashed #ddd; margin: 15px 0;">
+
+                            <div class="form-group">
+                                <label>Nueva Contraseña</label>
+                                <input type="password" class="form-input" placeholder="Dejar en blanco para mantener actual">
+                                <small style="color:#888; font-size: 0.75rem;">Solo llene este campo si desea cambiar la clave.</small>
+                            </div>
+
+                            <div class="form-grid" style="margin-top: 20px;">
+                                <button class="btn-add-item" style="background-color: white; color: #555; border: 1px solid #ccc;">
+                                    Cancelar
+                                </button>
+                                <button class="btn-add-item" style="background-color: #ffc107; color: #000;">
+                                    ↻ Actualizar
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="crm-list-panel">
+                        
+                        <div class="filter-bar" style="margin-bottom: 15px;">
+                            <h2 class="page-title" style="font-size: 1.2rem;">Personal del Sistema</h2>
+                            <div class="search-box" style="flex:1;">
+                                <input type="text" placeholder="Buscar por Nombre o C.I...">
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Usuario</th>
+                                        <th>Cédula</th>
+                                        <th>Contacto</th>
+                                        <th>Rol</th>
+                                        <th style="text-align: center;">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #fffbf0;"> <td>
+                                            <span class="item-name">Abel León</span>
+                                            <small class="text-muted">abel@laguaca.com</small>
+                                        </td>
+                                        <td><span class="invoice-id" style="background:#f0f0f0; color:#555;">V-12345678</span></td>
+                                        <td>
+                                            <div style="font-size: 0.85rem; color: #555;">
+                                                <div style="margin-bottom: 2px;">📧 abel@laguaca.com</div>
+                                                <div>📞 0414-5558899</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="stock-badge" style="background: #e0cffc; color: #59359a; border-color: #d0bfff;">
+                                                Administrador
+                                            </span>
+                                        </td>
+                                        <td class="actions-cell">
+                                            <button class="btn-action-icon modify" style="background-color: #ffc107; border-color: #e0a800;">
+                                                <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                            </button>
+                                            <button class="btn-action-icon cancel" style="opacity: 0.3; cursor: not-allowed;">
+                                                <img src="../img/close_24dp_000000.png" alt="Eliminar">
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span class="item-name">María Pérez</span>
+                                            <small class="text-muted">maria.ventas@laguaca.com</small>
+                                        </td>
+                                        <td><span class="invoice-id" style="background:#f0f0f0; color:#555;">V-20555999</span></td>
+                                        <td>
+                                            <div style="font-size: 0.85rem; color: #555;">
+                                                <div style="margin-bottom: 2px;">📧 maria.ventas@laguaca.com</div>
+                                                <div>📞 0412-1234567</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="stock-badge" style="background: #f8f9fa; color: #555; border-color: #ddd;">
+                                                Trabajador
+                                            </span>
+                                        </td>
+                                        <td class="actions-cell">
+                                            <button class="btn-action-icon modify" title="Modificar">
+                                                <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                            </button>
+                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                                <img src="../img/close_24dp_000000.png" alt="Eliminar">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-footer">
+                            <div class="footer-summary">Usuarios registrados: 2</div>
+                            <div class="pagination">
+                                <button class="page-btn disabled">&laquo;</button>
+                                <button class="page-btn active">1</button>
+                                <button class="page-btn disabled">&laquo;</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>

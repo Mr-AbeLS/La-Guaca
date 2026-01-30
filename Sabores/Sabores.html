@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Sabores - La Guaca</title>
+    <link rel="stylesheet" href="../css/Dashboard.css">
+</head>
+<body class="dashboard-page">
+
+    <header class="main-header">
+        <div class="header-logo">
+            <img src="../img/LaGuaca-logo-Remastering.png" class="logo" alt="Logo">
+        </div>
+        <div class="header-user">
+            <div class="user-info">
+                <img src="../img/User-000000.png" class="user-avatar">
+                <span class="user-name">Abel León</span>
+            </div>
+            <div class="user-actions">
+                <button class="btn-header btn-edit">Editar</button>
+                <button class="btn-header btn-logout">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">PRINCIPAL</div>
+                <span class="nav-item">Dashboard</span>
+
+                <div class="nav-section">COMERCIAL</div>
+                <span class="nav-item">Nueva Venta</span>
+                <span class="nav-item">Nueva Compra</span>
+                <span class="nav-item">Historial / Facturas</span>
+                <span class="nav-item">Clientes / Proveedores</span>
+
+                <div class="nav-section">CATÁLOGO</div>
+                <span class="nav-item">Helados</span>
+                <span class="nav-item">Presentaciones</span>
+                <span class="nav-item active">Sabores</span>
+
+                <div class="nav-section">SISTEMA</div>
+                <span class="nav-item">Usuarios</span>
+            </nav>
+        </aside>
+
+        <div class="main">
+            <main class="dashboard-content">
+
+                <div class="crm-container">
+
+                    <div class="crm-form-panel">
+                        <div class="builder-header">
+                            <span class="builder-title">Nuevo Sabor</span>
+                        </div>
+                        
+                        <div class="builder-body">
+                            
+                            <div class="form-group">
+                                <label>Nombre del Sabor <span style="color:red">*</span></label>
+                                <input type="text" class="form-input" placeholder="Ej: Chocolate Suizo">
+                            </div>
+
+                            <div class="form-group" style="margin-top: 20px;">
+                                <button class="btn-add-item">
+                                    Guardar Sabor
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="crm-list-panel">
+                        
+                        <div class="filter-bar" style="margin-bottom: 15px;">
+                            <h2 class="page-title" style="font-size: 1.2rem;">Sabores Disponibles</h2>
+                            <div class="search-box" style="flex:1;">
+                                <input type="text" placeholder="Buscar sabor...">
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th style="text-align: center; width: 150px;">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="item-name">Chocolate</span>
+                                        </td>
+                                        <td class="actions-cell">
+                                            <button class="btn-action-icon modify" title="Modificar">
+                                                <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                            </button>
+                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                                <img src="../img/delete_24dp_000000.png" alt="Eliminar">
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span class="item-name">Fresa</span>
+                                        </td>
+                                        <td class="actions-cell">
+                                            <button class="btn-action-icon modify" title="Modificar">
+                                                <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                            </button>
+                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                                <img src="../img/delete_24dp_000000.png" alt="Eliminar">
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span class="item-name">Mantecado</span>
+                                        </td>
+                                        <td class="actions-cell">
+                                            <button class="btn-action-icon modify" title="Modificar">
+                                                <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                            </button>
+                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                                <img src="../img/delete_24dp_000000.png" alt="Eliminar">
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span class="item-name">Ron con Pasas</span>
+                                        </td>
+                                        <td class="actions-cell">
+                                            <button class="btn-action-icon modify" title="Modificar">
+                                                <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                            </button>
+                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                                <img src="../img/delete_24dp_000000.png" alt="Eliminar">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-footer">
+                            <div class="footer-summary">4 Sabores registrados</div>
+                            <div class="pagination">
+                                <button class="page-btn disabled">&laquo;</button>
+                                <button class="page-btn active">1</button>
+                                <button class="page-btn disabled">&laquo;</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>

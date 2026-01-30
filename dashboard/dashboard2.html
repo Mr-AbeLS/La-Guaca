@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/Dashboard.css">
+</head>
+
+<body class="dashboard-page">
+
+    <header class="main-header">
+        
+        <div class="header-logo">
+            <img src="../img/LaGuaca-logo-Remastering.png" class="logo" alt="Logo">
+        </div>
+
+        <div class="header-user">
+            <div class="user-info">
+                <img src="../img/User-000000.png" class="user-avatar">
+                <span class="user-name">Abel León</span>
+            </div>
+            
+            <div class="user-actions">
+                <button class="btn-header btn-edit">Editar</button>
+                <button class="btn-header btn-logout">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+
+<!--         <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <span class="nav-item active">Dashboard</span>
+                <span class="nav-item">Helados</span>
+                <span class="nav-item">Sabores</span>
+                <span class="nav-item">Usuarios</span>
+            </nav>
+        </aside> -->
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">PRINCIPAL</div>
+                <span class="nav-item active">Dashboard</span>
+
+                <div class="nav-section">COMERCIAL</div>
+                <span class="nav-item">Nueva Venta</span>
+                <span class="nav-item">Nueva Compra</span>
+                <span class="nav-item">Historial / Facturas</span>
+                <span class="nav-item">Clientes / Proveedores</span>
+
+                <div class="nav-section">CATÁLOGO</div>
+                <span class="nav-item">Helados</span>
+                <span class="nav-item">Presentaciones</span>
+                <span class="nav-item">Sabores</span>
+
+                <div class="nav-section">SISTEMA</div>
+                <span class="nav-item">Usuarios</span>
+            </nav>
+        </aside>
+
+        <div class="main">
+            <main class="dashboard-content">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+                        <div>
+                            <h2 class="page-title">Resumen General</h2>
+                            <small style="color: #666;">Última actualización: Hace un momento</small>
+                        </div>
+                        <div style="padding: 5px 15px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-weight: bold; color: #555;">
+                            Hoy, 29 Ene 2026
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background: #e7f1ff;">
+                                <img src="../img/paid_64dp_000000.png" alt="Ventas" style="width: 28px; opacity: 0.7;">
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-label">Ventas del Día</span>
+                                <span class="stat-number">$ 1,250.00</span>
+                                <span class="stat-trend positive">⬆ +15% ayer</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background: #fff3cd;">
+                                <img src="../img/point_of_sale_64dp_000000.png" alt="Pedidos" style="width: 28px; opacity: 0.7;">
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-label">Tickets Hoy</span>
+                                <span class="stat-number">45</span>
+                                <span class="stat-trend negative">⬇ -2 ayer</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background: #f8d7da;">
+                                <img src="../img/exclamation_64dp_000000.png" alt="Alerta" style="width: 28px; opacity: 0.7;">
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-label">Stock Bajo</span>
+                                <span class="stat-number" style="color: #dc3545;">3 Prod.</span>
+                                <small style="color: #dc3545; font-size: 0.75rem;">Reponer urgente</small>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon" style="background: #d1e7dd;">
+                                <img src="../img/person_add_64dp_000000.png" alt="Clientes" style="width: 28px; opacity: 0.7;">
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-label">Clientes Nuevos</span>
+                                <span class="stat-number">8</span>
+                                <span class="stat-trend positive">⬆ Excelente</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-grid-2">
+                        
+                        <div class="card-panel">
+                            <div class="panel-header" style="display: flex; align-items: center; gap: 10px;">
+                                <img src="../img/award_star_64dp_000000.png" alt="Top" style="width: 24px; opacity: 0.6;">
+                                <h3 style="margin: 0;">Top 5 Más Vendidos (Mes)</h3>
+                            </div>
+                            <div class="top-products-list" style="margin-top: 20px;">
+                                <div class="top-item">
+                                    <div class="top-info">
+                                        <span class="top-name">Barquilla (Caja x50)</span>
+                                        <span class="top-qty">120 Vendidas</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div style="width: 90%; background-color: #0d6efd;"></div>
+                                    </div>
+                                </div>
+                                <div class="top-item">
+                                    <div class="top-info">
+                                        <span class="top-name">Helado 5L (Chocolate)</span>
+                                        <span class="top-qty">95 Vendidas</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div style="width: 75%; background-color: #6610f2;"></div>
+                                    </div>
+                                </div>
+                                <div class="top-item">
+                                    <div class="top-info">
+                                        <span class="top-name">Paleta Rellena Fresa</span>
+                                        <span class="top-qty">60 Vendidas</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div style="width: 50%; background-color: #fd7e14;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-panel">
+                            <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <img src="../img/schedule_64dp_000000.png" alt="Reloj" style="width: 24px; opacity: 0.6;">
+                                    <h3 style="margin: 0;">Últimos Movimientos</h3>
+                                </div>
+                                <a href="historial.html" style="font-size: 0.85rem; color: #0d6efd; text-decoration: none;">Ver todo</a>
+                            </div>
+                            <table class="simple-table" style="margin-top: 15px;">
+                                <tbody>
+                                    <tr>
+                                        <td><span class="dot sale"></span> Venta #158</td>
+                                        <td>Juan Pérez</td>
+                                        <td style="text-align: right; font-weight: bold;">$ 25.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="dot purchase"></span> Compra #FC-99</td>
+                                        <td>Dist. Los Andes</td>
+                                        <td style="text-align: right; color: #dc3545;">- $ 450.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="dot sale"></span> Venta #157</td>
+                                        <td>Consumidor Final</td>
+                                        <td style="text-align: right; font-weight: bold;">$ 5.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="dot sale"></span> Venta #156</td>
+                                        <td>María Rodriguez</td>
+                                        <td style="text-align: right; font-weight: bold;">$ 12.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

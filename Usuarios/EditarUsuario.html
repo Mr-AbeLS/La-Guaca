@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../css/Dashboard.css">
+</head>
+
+<body class="dashboard-page">
+
+    <header class="main-header">
+        
+        <div class="header-logo">
+            <img src="../img/LaGuaca-logo-Remastering.png" class="logo" alt="Logo">
+        </div>
+
+        <div class="header-user">
+            <div class="user-info">
+                <img src="../img/User-000000.png" class="user-avatar">
+                <span class="user-name">Abel León</span>
+            </div>
+            
+            <div class="user-actions">
+                <button class="btn-header btn-edit">Editar</button>
+                <button class="btn-header btn-logout">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">PRINCIPAL</div>
+                <span class="nav-item">Dashboard</span>
+
+                <div class="nav-section">COMERCIAL</div>
+                <span class="nav-item">Nueva Venta</span>
+                <span class="nav-item">Nueva Compra</span>
+                <span class="nav-item">Historial / Facturas</span>
+                <span class="nav-item">Clientes / Proveedores</span>
+
+                <div class="nav-section">CATÁLOGO</div>
+                <span class="nav-item">Helados</span>
+                <span class="nav-item">Presentaciones</span>
+                <span class="nav-item">Sabores</span>
+
+                <div class="nav-section">SISTEMA</div>
+                <span class="nav-item active">Usuarios</span>
+            </nav>
+        </aside>
+
+        <div class="main">
+            <main class="dashboard-content">
+
+                <div style="display: flex; justify-content: center; align-items: flex-start; padding-top: 10px;">
+
+                    <div class="crm-form-panel" style="width: 100%; max-width: 500px;">
+                        
+                        <div class="builder-header">
+                            <span class="builder-title">Mi Perfil</span>
+                            <small style="display:block; color:#888; font-size: 0.8rem; margin-top: 2px;">
+                                Actualizar datos de contacto y seguridad
+                            </small>
+                        </div>
+                        
+                        <div class="builder-body">
+                            
+                            <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #eee; margin-bottom: 20px;">
+                                <h4 style="margin-bottom: 15px; color: #555; font-size: 0.9rem;">Información Personal (No editable)</h4>
+                                
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label>Nombre</label>
+                                        <input type="text" class="form-input" value="Abel" readonly style="background-color: #e9ecef; cursor: not-allowed; border-color: #ddd;">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Apellido</label>
+                                        <input type="text" class="form-input" value="León" readonly style="background-color: #e9ecef; cursor: not-allowed; border-color: #ddd;">
+                                    </div>
+                                </div>
+
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label>Cédula</label>
+                                        <input type="text" class="form-input" value="V-12345678" readonly style="background-color: #e9ecef; cursor: not-allowed; border-color: #ddd;">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Rol Asignado</label>
+                                        <input type="text" class="form-input" value="Trabajador" readonly style="background-color: #e9ecef; cursor: not-allowed; border-color: #ddd; font-weight: bold; color: #555;">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Correo Electrónico</label>
+                                    <input type="email" class="form-input" value="abel@laguaca.com" readonly style="background-color: #e9ecef; cursor: not-allowed; border-color: #ddd;">
+                                </div>
+                            </div>
+
+                            <h4 style="margin-bottom: 15px; color: #333; font-size: 0.9rem; border-bottom: 1px dashed #ddd; padding-bottom: 5px;">
+                                Datos Modificables
+                            </h4>
+
+                            <div class="form-group">
+                                <label>Teléfono de Contacto</label>
+                                <input type="tel" class="form-input" value="0414-5558899" style="background-color: white; border-color: #0d6efd;">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Nueva Contraseña</label>
+                                <input type="password" class="form-input" placeholder="••••••••" style="background-color: white; border-color: #0d6efd;">
+                                <small style="color:#888; font-size: 0.75rem;">
+                                    Deje este campo vacío si <strong>NO</strong> desea cambiar su contraseña actual.
+                                </small>
+                            </div>
+
+                            <div class="form-group" style="margin-top: 25px; display: flex; gap: 10px;">
+                                <button class="btn-add-item" onclick="window.history.back()" style="background-color: white; color: #555; border: 1px solid #ccc;">
+                                    Volver
+                                </button>
+                                <button class="btn-add-item">
+                                    Guardar Cambios
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>

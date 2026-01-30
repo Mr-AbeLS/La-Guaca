@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Movimientos - La Guaca</title>
+    <link rel="stylesheet" href="../css/Dashboard.css">
+</head>
+<body class="dashboard-page">
+
+    <header class="main-header">
+        <div class="header-logo">
+            <img src="../img/LaGuaca-logo-Remastering.png" class="logo" alt="Logo">
+        </div>
+        <div class="header-user">
+            <div class="user-info">
+                <img src="../img/User-000000.png" class="user-avatar">
+                <span class="user-name">Abel León</span>
+            </div>
+            <div class="user-actions">
+                <button class="btn-header btn-edit">Editar</button>
+                <button class="btn-header btn-logout">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">PRINCIPAL</div>
+                <span class="nav-item">Dashboard</span>
+
+                <div class="nav-section">COMERCIAL</div>
+                <span class="nav-item">Nueva Venta</span>
+                <span class="nav-item">Nueva Compra</span>
+                <span class="nav-item active">Historial / Facturas</span>
+                <span class="nav-item">Clientes / Proveedores</span>
+
+                <div class="nav-section">CATÁLOGO</div>
+                <span class="nav-item">Helados</span>
+                <span class="nav-item">Presentaciones</span>
+                <span class="nav-item">Sabores</span>
+
+                <div class="nav-section">SISTEMA</div>
+                <span class="nav-item">Usuarios</span>
+            </nav>
+        </aside>
+
+        <div class="main">
+            <main class="dashboard-content">
+                
+                <div class="report-container">
+                    
+                    <div class="filter-bar">
+                        <h2 class="page-title">Historial de Movimientos</h2>
+                        
+                        <div class="filters-group">
+                            <div class="search-box">
+                                <input type="text" placeholder="Buscar por Nro, Cliente...">
+                            </div>
+
+                            <input type="date" class="filter-date">
+                            
+                            <select class="filter-select">
+                                <option value="">Todos los tipos</option>
+                                <option value="venta">Ventas</option>
+                                <option value="compra">Compras</option>
+                            </select>
+
+                            <button class="btn-export">
+                                Exportar
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nro. Fac</th>
+                                    <th>Tipo</th> <th>Fecha / Hora</th>
+                                    <th>Cliente / Proveedor</th>
+                                    <th>Estado</th>
+                                    <th style="text-align: right;">Total</th>
+                                    <th style="text-align: center;">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="invoice-id">#00158</span></td>
+                                    <td><span class="type-badge sale">VENTA</span></td>
+                                    <td>19/12/2025 <small class="text-muted">14:30</small></td>
+                                    <td>
+                                        <div class="client-cell">
+                                            <span class="client-name">Juan Pérez</span>
+                                            <small class="client-dni">V-12345678</small>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select class="form-select-small">
+                                            <option>Completado</option>
+                                            <option>Pendiente</option>
+                                            <option>Anulado</option>
+                                        </select>
+                                    </td>
+                                    <td class="amount-cell positive">$25.50</td>
+                                    <td class="actions-cell">
+                                        <button class="btn-action-icon view" title="Ver">
+                                            <img src="../img/visibility_24dp_000000.png" alt="Ver">
+                                        </button>
+                                        <button class="btn-action-icon modify" title="Modificar">
+                                            <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="invoice-id">FC-9821</span></td>
+                                    <td><span class="type-badge purchase">COMPRA</span></td>
+                                    <td>19/12/2025 <small class="text-muted">09:15</small></td>
+                                    <td>
+                                        <div class="client-cell">
+                                            <span class="client-name">Distribuidora Los Andes</span>
+                                            <small class="client-dni">J-30999111</small>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select class="form-select-small">
+                                            <option>Completado</option>
+                                            <option>Pendiente</option>
+                                            <option>Anulado</option>
+                                        </select>
+                                    </td>
+                                    <td class="amount-cell negative">-$450.00</td>
+                                    <td class="actions-cell">
+                                        <button class="btn-action-icon view" title="Ver">
+                                            <img src="../img/visibility_24dp_000000.png" alt="Ver">
+                                        </button>
+                                        <button class="btn-action-icon modify" title="Modificar">
+                                            <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr class="row-canceled">
+                                    <td><span class="invoice-id">#00157</span></td>
+                                    <td><span class="type-badge sale">VENTA</span></td>
+                                    <td>15/12/2025 <small class="text-muted">18:00</small></td>
+                                    <td>
+                                        <div class="client-cell">
+                                            <span class="client-name">Consumidor Final</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select class="form-select-small">
+                                            <option>Completado</option>
+                                            <option>Pendiente</option>
+                                            <option>Anulado</option>
+                                        </select>
+                                    </td>
+                                    <td class="amount-cell">$15.00</td>
+                                    <td class="actions-cell">
+                                        <button class="btn-action-icon view" title="Ver">
+                                            <img src="../img/visibility_24dp_000000.png" alt="Ver">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-footer">
+                        <div class="footer-summary">
+                            Mostrando <strong>3</strong> movimientos recientes
+                        </div>
+                        <div class="pagination">
+                            <button class="page-btn disabled">&laquo;</button>
+                                <button class="page-btn active">1</button>
+                                <button class="page-btn disabled">&laquo;</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
