@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nueva Compra (Error) - La Guaca</title>
+    <title>Nueva Compra - La Guaca</title>
     <link rel="stylesheet" href="../css/Dashboard.css">
 </head>
 
@@ -17,11 +17,11 @@
         <div class="header-user">
             <div class="user-info">
                 <img src="../img/User-000000.png" class="user-avatar">
-                <span class="user-name">Abel León</span>
+                <span class="user-name">Ranel Enríquez</span>
             </div>
             <div class="user-actions">
-                <button class="btn-header btn-edit">Editar</button>
-                <button class="btn-header btn-logout">Salir</button>
+                <button disabled  class="btn-header btn-edit">Editar</button>
+                <button disabled  class="btn-header btn-logout">Salir</button>
             </div>
         </div>
     </header>
@@ -57,60 +57,59 @@
                     <div class="pos-builder">
 
                         <div class="builder-header">
-                            <span class="builder-title">Registrar Compra (Entrada)</span>
+                            <span class="builder-title">Registrar Nueva Compra</span>
                         </div>
 
                         <div class="builder-body">
 
                             <div class="form-grid">
-                                <div class="form-group">
-                                    <label>Proveedor <span style="color:red">*</span></label>
+                                <div class="form-group form-full">
+                                    <label>Proveedor </label>
                                     <div class="input-group">
-                                        <select class="form-select error">
+                                        <select disabled class="form-select error">
                                             <option value="">Seleccione Proveedor...</option>
-                                            <option>Distribuidora Los Andes</option>
-                                            <option>Helados Cali</option>
                                         </select>
-                                        <button class="btn-icon-add" title="Nuevo Proveedor">+</button>
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Nro. Factura / Control</label>
-                                    <input type="text" class="form-input" placeholder="Ej: 000-45892">
-                                </div>
                             </div>
 
                             <div class="form-grid">
                                 <div class="form-group form-full">
                                     <label>Helado a Ingresar</label>
-                                    <!-- <select class="form-select">
-                                        <option>Seleccione...</option>
-                                    </select> -->
+                                    <select disabled class="form-select error">
+                                        <option selected>Seleccione un Helado...</option>
+                                    </select>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group form-full">
                                     <label>Presentación</label>
-                                    <select class="form-select">
-                                        <option selected>Cesta (x6 Unidades)</option>
-                                        <option>cestas (x12 Unidades)</option>
+                                    <select disabled class="form-select error">
+                                        <option selected">Seleccione presentacion...</option>
                                     </select>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Costo de Compra</label>
-                                    <input type="text" class="form-input" value="$ 45.00">
+                                    <label>Costo de Compra en USD</label>
+                                    <input disabled type="text" class="form-input error" value="$ 0.00">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Costo de Compra en Bs</label>
+                                    <input disabled type="text" class="form-input error" value="$ 0.00">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label>Sabores en la Cesta (Selección Múltiple)</label>
                                 <div class="flavors-area">
-                                    <span class="flavor-tag selected">Chocolate</span>
-                                    <span class="flavor-tag selected">Fresa</span>
-                                    <span class="flavor-tag selected">Mantecado</span>
+                                    <span class="flavor-tag">Chocolate</span>
+                                    <span class="flavor-tag">Fresa</span>
+                                    <span class="flavor-tag">Mantecado</span>
                                     <span class="flavor-tag">Ron con Pasas</span>
                                     <span class="flavor-tag">Oreo</span>
+                                    <span class="flavor-tag">Coco</span>
+                                    <span class="flavor-tag">Pistacho</span>
                                 </div>
                             </div>
 
@@ -122,12 +121,12 @@
                                             Entran: 24 Unid.
                                         </span>
                                     </div>
-                                    <input type="number" class="form-input" value="4" min="1">
+                                    <input disabled type="number" class="form-input error" value="4" min="1">
                                 </div>
 
                                 <div class="form-group">
                                     <label>&nbsp;</label>
-                                    <button class="btn-add-item">
+                                    <button disabled  class="btn-add-item">
                                         Cargar al Inventario
                                     </button>
                                 </div>
@@ -137,30 +136,56 @@
                     </div>
 
                     <div class="pos-ticket">
-                        <div class="ticket-header" style="background-color: #5c636a;">
-                            <h3>Orden de Compra</h3>
+                        <div class="ticket-header" style="background-color: #83c47a;"> 
+                            <h3>
+                                Factura C2600002
+                            </h3>
                             <div class="ticket-info">
-                                <span>Fecha: 14/01/2026</span>
-                                <span>Usuario: Abel</span>
+                                <span>Fecha: 14/12/2025</span>
+                                <span>Usuario: Ranel</span>
                             </div>
                         </div>
 
                         <div class="ticket-body">
-                            <div style="padding: 40px 20px; text-align: center; color: #999;">
-                                <p>Agregue items para comenzar</p>
-                            </div> 
+                            <table class="ticket-table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-desc">Helado</th>
+                                        <th class="col-qty">Cant</th>
+                                        <th class="col-total">Costo</th>
+                                        <th class="col-actions"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="item-name">Napolitano</span>
+                                            <span class="item-detail">Chocolate / Fresa / Mantecado</span>
+                                            <br>
+                                            <span class="item-detail">Cesta 5 Litros</span>
+                                        </td>
+                                        <td>4</td>
+                                        <td>$180.00</td>
+                                        <td style="text-align: center;">
+                                            <button disabled  class="btn-action-icon">
+                                                <img src="../img/delete_24dp_000000.png" alt="Eliminar">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
                         <div class="ticket-footer">
                             <div class="total-row">
-                                <span>Total Items</span>
-                                <span>0 cestas</span>
+                                <span>Total de Helados</span>
+                                <span>24 Unidades</span>
                             </div>
                             <div class="total-row final">
                                 <span>Total Costo</span>
-                                <span>$0.00</span>
+                                <span>$180.00</span>
                             </div>
-                            <button class="btn-checkout" style="background-color: #5c636a;">
+                            <button disabled  class="btn-checkout">
                                 GUARDAR COMPRA
                             </button>
                         </div>
@@ -171,26 +196,5 @@
             </main>
         </div>
     </div>
-
-    <div class="modal-overlay">
-        <div class="modal-box">
-            <div class="modal-icon error">
-                <span class="x-mark">
-                    <span class="line left"></span>
-                    <span class="line right"></span>
-                </span>
-            </div>
-
-            <h3 class="modal-title">¡Datos Incompletos!</h3>
-            <p class="modal-text">
-                Por favor seleccione un <strong>Proveedor</strong> válido antes de continuar con la carga de Helados.
-            </p>
-
-            <button class="modal-btn">
-                Corregir
-            </button>
-        </div>
-    </div>
-
 </body>
 </html>

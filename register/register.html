@@ -1,111 +1,69 @@
-<!-- <!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Cuenta</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-    <div class="logo-container">
-        <img class="logo" src="../img/LaGuaca-logo-Remastering.png" alt="Logo" height="100">
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Usuario - La Guaca</title>
+    <link rel="stylesheet" href="../css/LoginRegister.css" />
+  </head>
+  <body class="login-page">
     <div class="login-wrapper">
-        <div class="login-container">
-            <div class="div-head-login">
-                <h1>Crear Cuenta</h1>
+      <div class="login-container">
+        <div class="div-head-login">
+          <img
+            class="logo"
+            src="../img/LaGuaca-logo-Remastering.png"
+            alt="Logo"
+          />
+          <h1>Crear Usuario</h1>
+        </div>
+
+        <div class="form-container">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px">
+            <div>
+              <label>Nombre</label>
+              <input disabled type="text" placeholder="Ej: Juan" />
             </div>
             <div>
-                <form action="" class="form-container">
-                    
-                    <div>
-                        <label>Nombre Completo</label> <br>
-                        <input type="text" placeholder="Nombre y apellido">
-                    </div>
-
-                    <div>
-                        <label>Correo Electrónico</label> <br>
-                        <input type="email" placeholder="ejemplo@correo.com">
-                    </div>
-
-                    <div>
-                        <label>Numero de Cedula</label> <br>
-                        <input type="text" placeholder="12345678">
-                    </div>
-
-                    <div>
-                        <label>Contraseña</label> <br>
-                        <input type="password" placeholder="Ingrese la contraseña...">
-                    </div>
-
-                    <div class="button-login">
-                        <button type="submit">Registrarse</button>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 15px;">
-                        <span>¿Ya tienes cuenta? </span>
-                        <a href="" style="color: #0d6efd; text-decoration: none; font-weight: bold;">Inicia sesión</span>
-                    </div>
-                </form>
+              <label>Apellido</label>
+              <input disabled type="text" placeholder="Ej: Pérez" />
             </div>
+          </div>
+
+          <div>
+            <label>Correo Electrónico</label>
+            <input disabled type="text" placeholder="ejemplo@correo.com" />
+          </div>
+
+          <div>
+            <label>Número de Cédula</label>
+            <input disabled type="text" placeholder="V-12345678" />
+          </div>
+
+          <div>
+            <label style="color: #d9534f">Llave de Acceso Maestra</label>
+            <input
+              type="password"
+              placeholder="Solo para uso interno"
+              style="border-color: #d9534f; background-color: #fff5f5"
+            />
+          </div>
+
+          <div>
+            <label>Contraseña</label>
+            <input disabled type="password" placeholder="Mínimo 8 caracteres" />
+          </div>
+
+          <div class="button-login">
+            <button type="button" class="btn-primary">Registrar Usuario</button>
+          </div>
+
+          <div class="text-center">
+            <span>¿Ya tienes cuenta? </span>
+            <span class="link-action">Inicia sesión</span>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Cuenta</title>
-    <link rel="stylesheet" href="../css/LoginRegister.css">
-</head>
-<body class="login-page">
-
-    <div class="login-wrapper">
-        <div class="login-container">
-            
-            <div class="div-head-login">
-                <img class="logo" src="../img/LaGuaca-logo-Remastering.png" alt="Logo">
-                <h1>Crear Cuenta</h1>
-            </div>
-
-            <div>
-                <form action="" class="form-container">
-                    
-                    <div>
-                        <label>Nombre Completo</label> <br>
-                        <input type="text" placeholder="Nombre y apellido">
-                    </div>
-
-                    <div>
-                        <label>Correo Electrónico</label> <br>
-                        <input type="email" placeholder="ejemplo@correo.com">
-                    </div>
-
-                    <div>
-                        <label>Número de Cédula</label> <br>
-                        <input type="text" placeholder="12345678">
-                    </div>
-
-                    <div>
-                        <label>Contraseña</label> <br>
-                        <input type="password" placeholder="Ingrese la contraseña...">
-                    </div>
-
-                    <div class="button-login">
-                        <button type="button">Registrarse</button>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 15px;">
-                        <span>¿Ya tienes cuenta? </span>
-                        <span style="color: #0d6efd; text-decoration: none; font-weight: bold;">Inicia sesión</span>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
-</body>
+  </body>
 </html>

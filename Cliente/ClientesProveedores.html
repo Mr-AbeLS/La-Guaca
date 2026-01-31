@@ -15,11 +15,11 @@
         <div class="header-user">
             <div class="user-info">
                 <img src="../img/User-000000.png" class="user-avatar">
-                <span class="user-name">Abel León</span>
+                <span class="user-name">Ranel Enríquez</span>
             </div>
             <div class="user-actions">
-                <button class="btn-header btn-edit">Editar</button>
-                <button class="btn-header btn-logout">Salir</button>
+                <button disabled  class="btn-header btn-edit">Editar</button>
+                <button disabled  class="btn-header btn-logout">Salir</button>
             </div>
         </div>
     </header>
@@ -60,14 +60,14 @@
                         <div class="builder-body">
                             
                             <div class="form-group">
-                                <label>Nombre y Apellido / Nombre de Empresa <span style="color:red">*</span></label>
-                                <input type="text" class="form-input" placeholder="Ej: Juan Pérez">
+                                <label>Nombre y Apellido / Nombre de Empresa</label>
+                                <input disabled type="text" class="form-input" placeholder="Ej: Juan Pérez">
                             </div>
 
                             <div class="form-grid">
                                 <div class="form-group">
                                     <label>Tipo</label>
-                                    <select class="form-select">
+                                    <select disabled class="form-select">
                                         <option>V</option>
                                         <option>E</option>
                                         <option>J</option>
@@ -75,18 +75,18 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Documento <span style="color:red">*</span></label>
-                                    <input type="text" class="form-input" placeholder="12345678">
+                                    <label>Documento </label>
+                                    <input disabled type="text" class="form-input" placeholder="12345678">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label>Teléfono</label>
-                                <input type="tel" class="form-input" placeholder="0414-1234567">
+                                <input disabled type="tel" class="form-input" placeholder="0414-1234567">
                             </div>
 
                             <div class="form-group" style="margin-top: 20px;">
-                                <button class="btn-add-item">
+                                <button disabled  class="btn-add-item">
                                     Guardar Cliente / Proveedor
                                 </button>
                             </div>
@@ -97,9 +97,9 @@
                     <div class="crm-list-panel">
                         
                         <div class="filter-bar" style="margin-bottom: 15px;">
-                            <h2 class="page-title" style="font-size: 1.2rem;">Directorio</h2>
+                            <h2 class="page-title" style="font-size: 1.2rem;">Listado Cliente / Proveedor</h2>
                             <div class="search-box" style="flex:1;">
-                                <input type="text" placeholder="Buscar por Nombre o CI/RIF...">
+                                <input disabled type="text" placeholder="Buscar por Nombre o CI/RIF...">
                             </div>
                         </div>
 
@@ -120,10 +120,13 @@
                                         <td><span class="invoice-id">J-50221144</span></td>
                                         <td>0412-5558899</td>
                                         <td class="actions-cell">
-                                            <button class="btn-action-icon modify" title="Editar">
+                                            <button disabled  class="btn-action-icon modify" >
                                                 <img src="../img/settings_24dp_000000.png" alt="Editar">
                                             </button>
-                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                            <button disabled  class="btn-action-icon">
+                                                <img src="../img/close_24dp_000000.png" alt="Anular">
+                                            </button>
+                                            <button disabled  class="btn-action-icon" >
                                                 <img src="../img/delete_24dp_000000.png" alt="Eliminar">
                                             </button>
                                         </td>
@@ -136,10 +139,13 @@
                                         <td><span class="invoice-id" style="background:#f0f0f0; color:#333;">V-15888999</span></td>
                                         <td>0424-1112233</td>
                                         <td class="actions-cell">
-                                            <button class="btn-action-icon modify" title="Editar">
+                                            <button disabled  class="btn-action-icon modify" >
                                                 <img src="../img/settings_24dp_000000.png" alt="Editar">
                                             </button>
-                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                            <button disabled  class="btn-action-icon">
+                                                <img src="../img/close_24dp_000000.png" alt="Anular">
+                                            </button>
+                                            <button disabled  class="btn-action-icon" >
                                                 <img src="../img/delete_24dp_000000.png" alt="Eliminar">
                                             </button>
                                         </td>
@@ -151,9 +157,9 @@
                         <div class="table-footer">
                             <div class="footer-summary">Clientes: 1 / Proveedores: 1</div>
                             <div class="pagination">
-                                <button class="page-btn disabled">&laquo;</button>
-                                <button class="page-btn active">1</button>
-                                <button class="page-btn disabled">&laquo;</button>
+                                <button disabled  class="page-btn disabled">&laquo;</button>
+                                <button disabled  class="page-btn active">1</button>
+                                <button disabled  class="page-btn disabled">&laquo;</button>
                             </div>
                         </div>
 

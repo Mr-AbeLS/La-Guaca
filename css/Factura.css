@@ -131,7 +131,7 @@
     align-items: center;
     gap: 8px;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
         
 .btn-back {
@@ -142,7 +142,7 @@
     border-radius: 4px;
     font-size: 0.9rem;
     text-decoration: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
         /* Badge Ajustado */

@@ -1,138 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Factura #00158 - La Guaca</title>
-    <link rel="stylesheet" href="../css/Dashboard.css">
-    <link rel="stylesheet" href="../css/Factura.css">
-    <style>
-        /* ESTILOS ESPECÍFICOS COMPACTOS PARA LA FACTURA DIGITAL */
-        
-    </style>
-</head>
-<body class="dashboard-page">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle Factura - La Guaca</title>
+    <link rel="stylesheet" href="../css/Dashboard.css" />
+    <link rel="stylesheet" href="../css/Factura.css" />
+  </head>
+  <body class="dashboard-page">
     <header class="main-header">
-        <div class="header-logo">
-            <img src="../img/LaGuaca-logo-Remastering.png" class="logo" alt="Logo">
+      <div class="header-logo">
+        <img
+          src="../img/LaGuaca-logo-Remastering.png"
+          class="logo"
+          alt="Logo"
+        />
+      </div>
+      <div class="header-user">
+        <div class="user-info">
+          <img src="../img/User-000000.png" class="user-avatar" />
+          <span class="user-name">Ranel Enríquez</span>
         </div>
-        <div class="header-user">
-            <div class="user-info">
-                <img src="../img/User-000000.png" class="user-avatar">
-                <span class="user-name">Abel León</span>
-            </div>
-            <div class="user-actions">
-                <button class="btn-header btn-edit">Editar</button>
-                <button class="btn-header btn-logout">Salir</button>
-            </div>
+        <div class="user-actions">
+          <button disabled class="btn-header btn-edit">Editar</button>
+          <button disabled class="btn-header btn-logout">Salir</button>
         </div>
+      </div>
     </header>
 
     <div class="dashboard-container">
-        
-        <aside class="sidebar">
-            <nav class="sidebar-nav">
-                <div class="nav-section">PRINCIPAL</div>
-                <span class="nav-item">Dashboard</span>
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <div class="nav-section">PRINCIPAL</div>
+          <span class="nav-item">Dashboard</span>
 
-                <div class="nav-section">COMERCIAL</div>
-                <span class="nav-item">Nueva Venta</span>
-                <span class="nav-item">Nueva Compra</span>
-                <span class="nav-item active">Historial / Facturas</span>
-                <span class="nav-item">Clientes / Proveedores</span>
+          <div class="nav-section">COMERCIAL</div>
+          <span class="nav-item">Nueva Venta</span>
+          <span class="nav-item">Nueva Compra</span>
+          <span class="nav-item active">Historial / Facturas</span>
+          <span class="nav-item">Clientes / Proveedores</span>
 
-                <div class="nav-section">CATÁLOGO</div>
-                <span class="nav-item">Helados</span>
-                <span class="nav-item">Presentaciones</span>
-                <span class="nav-item">Sabores</span>
+          <div class="nav-section">CATÁLOGO</div>
+          <span class="nav-item">Helados</span>
+          <span class="nav-item">Presentaciones</span>
+          <span class="nav-item">Sabores</span>
 
-                <div class="nav-section">SISTEMA</div>
-                <span class="nav-item">Usuarios</span>
-            </nav>
-        </aside>
+          <div class="nav-section">SISTEMA</div>
+          <span class="nav-item">Usuarios</span>
+        </nav>
+      </aside>
 
-        <div class="main">
-            <main class="dashboard-content">
-                
-                <div class="invoice-container">
-                    
-                    <div class="invoice-top-header">
-                        <div class="invoice-title">
-                            <h1>Factura #00158</h1>
-                            <div class="invoice-subtitle">Fecha: 19/12/2025 - Hora: 14:30</div>
-                        </div>
-                        <div style="text-align: right;">
-                            <span class="status-badge-invoice completed">
-                                PAGADO
-                            </span>
-                            <div style="margin-top: 5px; color: #666; font-size: 0.8rem;">
-                                Tipo: <strong>Venta</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="invoice-info-grid">
-                        <div class="info-box">
-                            <h3>De:</h3>
-                            <p><strong>Inversiones La Guaca C.A.</strong></p>
-                            <p>RIF: J-503649569</p>
-                            <p>Valencia, Carabobo</p>
-                            <p>Telf: 0412-0000000</p>
-                        </div>
-                        
-                        <div class="info-box">
-                            <h3>Para:</h3>
-                            <p><strong>Juan Pérez</strong></p>
-                            <p>C.I / RIF: V-12345678</p>
-                            <p>Dirección: Valencia, Carabobo</p>
-                            <p>Telf: 0412-5558899</p>
-                        </div>
-                    </div>
-
-                    <table class="invoice-table">
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Helado</th>
-                                <th class="text-center">Cant.</th>
-                                <th class="text-right">Precio</th>
-                                <th class="text-right">Total</th>
-                            </tr>
-                        </thead>
-                        
-                    </table>
-
-                    <div class="invoice-totals">
-                        <div class="totals-box">
-                            <div class="total-row">
-                                <span>Subtotal:</span>
-                                <span>$ 0.00</span>
-                            </div>
-                            <div class="total-row">
-                                <span>IVA (0%):</span>
-                                <span>$ 0.00</span>
-                            </div>
-                            <div class="total-row final">
-                                <span>Total:</span>
-                                <span>$ 0.00</span>
-                            </div>
-                            <div style="text-align: right; margin-top: 5px; font-size: 0.8rem; color: #999;">
-                                Pago: <strong>Efectivo Divisa</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="invoice-actions">
-                        <button class="btn-back">
-                            Volver
-                        </button>
-                    </div>
-
+      <div class="main">
+        <main class="dashboard-content">
+          <div class="invoice-container">
+            <div class="invoice-top-header">
+              <div class="invoice-title">
+                <h1>Factura #00158</h1>
+                <div class="invoice-subtitle">
+                  Fecha: 19/12/2025 - Hora: 14:30
                 </div>
+              </div>
+              <div style="text-align: right">
+                <span class="status-badge-invoice completed"> PAGADO </span>
+                <div style="margin-top: 5px; color: #666; font-size: 0.8rem">
+                  Tipo: <strong>Venta</strong>
+                </div>
+              </div>
+            </div>
 
-            </main>
-        </div>
+            <div class="invoice-info-grid">
+              <div class="info-box">
+                <h3>De:</h3>
+                <p><strong>Inversiones La Guaca C.A.</strong></p>
+                <p>RIF: J-503649569</p>
+                <p>Valencia, Carabobo</p>
+                <p>Telf: 0412-0000000</p>
+              </div>
+
+              <div class="info-box">
+                <h3>Para:</h3>
+                <p><strong>Juan Pérez</strong></p>
+                <p>C.I / RIF: V-12345678</p>
+                <p>Dirección: Valencia, Carabobo</p>
+                <p>Telf: 0412-5558899</p>
+              </div>
+            </div>
+
+            <table class="invoice-table">
+              <thead>
+                <tr>
+                  <th style="width: 50%">Helado</th>
+                  <th class="text-center">Cant.</th>
+                  <th class="text-right">Precio</th>
+                  <th class="text-right">Total</th>
+                </tr>
+              </thead>
+            </table>
+
+            <div class="invoice-totals">
+              <div class="totals-box">
+                <div class="total-row">
+                  <span>Subtotal:</span>
+                  <span>$ 0.00</span>
+                </div>
+                <div class="total-row">
+                  <span>IVA (0%):</span>
+                  <span>$ 0.00</span>
+                </div>
+                <div class="total-row final">
+                  <span>Total:</span>
+                  <span>$ 0.00</span>
+                </div>
+                <div
+                  style="
+                    text-align: right;
+                    margin-top: 5px;
+                    font-size: 0.8rem;
+                    color: #999;
+                  "
+                >
+                  Pago: <strong>Efectivo Divisa</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="invoice-actions">
+              <button disabled class="btn-back">Volver</button>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

@@ -1,90 +1,50 @@
-<!-- <!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión - La Guaca</title>
+    <link rel="stylesheet" href="../css/LoginRegister.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesion</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-
-<body>
-    <div class="logo-container">
-        <img class="logo" src="../img/LaGuaca-logo-Remastering.png" alt="Logo" height="100" width="">
-    </div>
+  <body class="login-page">
     <div class="login-wrapper">
-        <div class="login-container">
-            <div class="div-head-login">
-                <h1>Inicio de sesion</h1>
-            </div>
-            <div>
-                <form action="" class="form-container">
-                    <div>
-                        <label>Correo</label> <br>
-                        <input type="email" placeholder="Introduzca correo...">
-                    </div>
-                    <div>
-                        <label>Contraseña</label> <br>
-                        <input type="password" placeholder="Introduzca contraseña...">
-                    </div>
-                    <div class="button-login">
-                        <button type="submit">Iniciar sesion</button>
-                        <button>Registrarse</button>
-                    </div>
-                    <div style="text-align: center; margin-top: 15px;">
-                        <span>¿Olvidate tu contraseña? </span>
-                        <a href="" style="color: #0d6efd; text-decoration: none; font-weight: bold;">Recuperar</span>
-                    </div>
-                </form>
-            </div>
+      <div class="login-container">
+        <div class="div-head-login">
+          <img
+            class="logo"
+            src="../img/LaGuaca-logo-Remastering.png"
+            alt="Logo"
+          />
+          <h1>Bienvenido</h1>
         </div>
-    </div>
-</body>
 
-</html> -->
+        <div class="form-container">
+          <div>
+            <label>Correo Electrónico</label>
+            <input disabled type="text" placeholder="usuario@laguaca.com" />
+          </div>
 
-<!DOCTYPE html>
-<html lang="es">
+          <div>
+            <label>Contraseña</label>
+            <input disabled type="password" placeholder="••••••••" />
+          </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesion</title>
-    <link rel="stylesheet" href="../css/LoginRegister.css">
-</head>
+          <div class="button-login">
+            <button disabled type="button" class="btn-primary">
+              Iniciar Sesión
+            </button>
+            <button disabled type="button" class="btn-secondary">
+              Registrarse
+            </button>
+          </div>
 
-<body class="login-page">
-    
-    <div class="login-wrapper">
-        <div class="login-container">
-            
-            <div class="div-head-login">
-                <img class="logo" src="../img/LaGuaca-logo-Remastering.png" alt="Logo">
-                <h1>Inicio de sesion</h1>
-            </div>
-
-            <div>
-                <form action="" class="form-container">
-                    <div>
-                        <label>Correo</label> <br>
-                        <input type="email" placeholder="Introduzca correo...">
-                    </div>
-                    <div>
-                        <label>Contraseña</label> <br>
-                        <input type="password" placeholder="Introduzca contraseña...">
-                    </div>
-                    <div class="button-login">
-                        <button type="button">Iniciar sesion</button>
-                        <button type="button">Registrarse</button>
-                    </div>
-                    <div style="text-align: center; margin-top: 15px;">
-                        <span>¿Olvidaste tu contraseña? </span>
-                        <span style="color: #0d6efd; text-decoration: none; font-weight: bold;">Recuperar</span>
-                    </div>
-                </form>
-            </div>
+          <div class="text-center">
+            <span>¿Olvidaste tu contraseña? </span>
+            <span class="link-action">Recuperar</span>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

@@ -15,11 +15,11 @@
         <div class="header-user">
             <div class="user-info">
                 <img src="../img/User-000000.png" class="user-avatar">
-                <span class="user-name">Abel León</span>
+                <span class="user-name">Ranel Enríquez</span>
             </div>
             <div class="user-actions">
-                <button class="btn-header btn-edit">Editar</button>
-                <button class="btn-header btn-logout">Salir</button>
+                <button disabled  class="btn-header btn-edit">Editar</button>
+                <button disabled  class="btn-header btn-logout">Salir</button>
             </div>
         </div>
     </header>
@@ -60,8 +60,8 @@
                         <div class="builder-body">
                             
                             <div class="form-group">
-                                <label>Nombre del Helado <span style="color:red">*</span></label>
-                                <input type="text" class="form-input" placeholder="Ej: Tentacion">
+                                <label>Nombre del Helado </label>
+                                <input disabled type="text" class="form-input" placeholder="Ej: Tentacion">
                             </div>
 
                             <label class="section-label">
@@ -71,7 +71,7 @@
                             <div class="control-box">
                                 <div class="form-group" style="margin-bottom: 10px;">
                                     <label style="font-size: 0.85rem;">Presentación</label>
-                                    <select class="form-select" style="height: 38px;">
+                                    <select disabled class="form-select" style="height: 38px;">
                                         <option>Seleccione...</option>
                                         <option>Detal</option>
                                         <option>Cesta</option>
@@ -80,9 +80,9 @@
                                 <div style="display: flex; gap: 10px; align-items: flex-end;">
                                     <div style="flex: 1;">
                                         <label style="font-size: 0.85rem;">Precio ($)</label>
-                                        <input type="number" class="form-input" placeholder="0.00" style="height: 38px;">
+                                        <input disabled type="number" class="form-input" placeholder="0.00" style="height: 38px;">
                                     </div>
-                                    <button class="btn-small-add">
+                                    <button disabled  class="btn-small-add">
                                         <img src="../img/add_24dp_000000.png" alt="Agregar">
                                     </button>
                                 </div>
@@ -93,7 +93,7 @@
                                     <span>Unidad Paleta</span>
                                     <div>
                                         <strong>$ 3.00</strong> 
-                                        <button class="mini-btn-del">
+                                        <button disabled  class="mini-btn-del">
                                             <img src="../img/close_24dp_000000.png" alt="Eliminar">
                                         </button>
                                     </div>
@@ -102,7 +102,7 @@
                                     <span>Cesta Paletas</span>
                                     <div>
                                         <strong>$ 70.00</strong> 
-                                        <button class="mini-btn-del">
+                                        <button disabled  class="mini-btn-del">
                                             <img src="../img/close_24dp_000000.png" alt="Eliminar">
                                         </button>
                                     </div>
@@ -118,7 +118,7 @@
                                     
                                     <div style="flex: 1;">
                                         <label style="font-size: 0.85rem; visibility: hidden;">Sabor</label>
-                                        <select class="form-select" style="height: 38px;">
+                                        <select disabled class="form-select" style="height: 38px;">
                                             <option>Seleccione sabor...</option>
                                             <option>Chocolate</option>
                                             <option>Fresa</option>
@@ -126,7 +126,7 @@
                                         </select>
                                     </div>
 
-                                    <button class="btn-small-add">
+                                    <button disabled  class="btn-small-add">
                                         <img src="../img/add_24dp_000000.png" alt="Agregar">
                                     </button>
                                 </div>
@@ -135,26 +135,26 @@
                             <div class="flavors-container">
                                 <span class="flavor-chip">
                                     Chocolate 
-                                    <button class="chip-close-btn">
+                                    <button disabled  class="chip-close-btn">
                                         <img src="../img/close_24dp_000000.png" alt="x">
                                     </button>
                                 </span>
                                 <span class="flavor-chip">
                                     Fresa 
-                                    <button class="chip-close-btn">
+                                    <button disabled  class="chip-close-btn">
                                         <img src="../img/close_24dp_000000.png" alt="x">
                                     </button>
                                 </span>
                                 <span class="flavor-chip">
                                     Mantecado 
-                                    <button class="chip-close-btn">
+                                    <button disabled  class="chip-close-btn">
                                         <img src="../img/close_24dp_000000.png" alt="x">
                                     </button>
                                 </span>
                             </div>
 
                             <div class="form-group" style="margin-top: 25px;">
-                                <button class="btn-add-item">
+                                <button disabled  class="btn-add-item">
                                     Guardar Helado
                                 </button>
                             </div>
@@ -167,7 +167,7 @@
                         <div class="filter-bar" style="margin-bottom: 15px;">
                             <h2 class="page-title" style="font-size: 1.2rem;">Catálogo de Helados</h2>
                             <div class="search-box" style="flex:1;">
-                                <input type="text" placeholder="Buscar Helado...">
+                                <input disabled type="text" placeholder="Buscar Helado...">
                             </div>
                         </div>
 
@@ -198,11 +198,14 @@
                                             </div>
                                         </td>
                                         <td class="actions-cell">
-                                            <button class="btn-action-icon modify" title="Modificar">
-                                                <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                            <button disabled  class="btn-action-icon modify" >
+                                                <img src="../img/settings_24dp_000000.png" >
                                             </button>
-                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                            <button disabled  class="btn-action-icon cancel" >
                                                 <img src="../img/close_24dp_000000.png" alt="Eliminar">
+                                            </button>
+<button disabled  class="btn-action-icon cancel" >
+                                                <img src="../img/delete_24dp_000000.png" alt="Eliminar">
                                             </button>
                                         </td>
                                     </tr>
@@ -223,11 +226,14 @@
                                             </div>
                                         </td>
                                         <td class="actions-cell">
-                                            <button class="btn-action-icon modify" title="Modificar">
-                                                <img src="../img/settings_24dp_000000.png" alt="Modificar">
+                                            <button disabled  class="btn-action-icon modify" >
+                                                <img src="../img/settings_24dp_000000.png" >
                                             </button>
-                                            <button class="btn-action-icon cancel" title="Eliminar">
+                                            <button disabled  class="btn-action-icon cancel" >
                                                 <img src="../img/close_24dp_000000.png" alt="Eliminar">
+                                            </button>
+<button disabled  class="btn-action-icon cancel" >
+                                                <img src="../img/delete_24dp_000000.png" alt="Eliminar">
                                             </button>
                                         </td>
                                     </tr>
@@ -238,9 +244,9 @@
                         <div class="table-footer">
                             <div class="footer-summary">2 Helados registrados</div>
                             <div class="pagination">
-                                <button class="page-btn disabled">&laquo;</button>
-                                <button class="page-btn active">1</button>
-                                <button class="page-btn disabled">&laquo;</button>
+                                <button disabled  class="page-btn disabled">&laquo;</button>
+                                <button disabled  class="page-btn active">1</button>
+                                <button disabled  class="page-btn disabled">&laquo;</button>
                             </div>
                         </div>
 

@@ -47,13 +47,18 @@ body.dashboard-page {
 .user-actions { display: flex; gap: 10px; }
 
 .btn-header {
-    padding: 6px 15px; border: none; border-radius: 20px;
-    cursor: pointer; font-size: 13px; font-weight: 600; transition: 0.3s;
+    padding: 6px 15px; 
+    border: none; 
+    border-radius: 20px;
+    /* cursor: pointer; */
+    font-size: 13px; 
+    font-weight: 600;
+    /* transition: 0.3s; */
 }
 .btn-edit { background-color: white; color: #0d6efd; border: 1px solid #0d6efd; }
-.btn-edit:hover { background-color: #0d6efd; color: white; }
+/* .btn-edit:hover { background-color: #0d6efd; color: white; } */
 .btn-logout { background-color: #dc3545; color: white; }
-.btn-logout:hover { background-color: #a71d2a; }
+/* .btn-logout:hover { background-color: #a71d2a; } */
 
 /* 
    3. LAYOUT PRINCIPAL
@@ -71,10 +76,10 @@ body.dashboard-page {
     overflow-y: auto;
 }
 
-.sidebar-nav {
+/* .sidebar-nav {
     display: flex;
     flex-direction: column; 
-}
+} */
 
 .nav-section {
     padding: 15px 25px 5px 25px; 
@@ -96,10 +101,10 @@ body.dashboard-page {
     font-size: 0.95rem;
 }
 
-.nav-item:hover { 
+/* .nav-item:hover { 
     background-color: rgb(245, 245, 255); 
     color: #333; 
-}
+} */
 
 .nav-item.active { 
     background-color: rgb(241, 239, 255); 
@@ -174,7 +179,6 @@ body.dashboard-page {
 
 .form-select-small {
     box-sizing: border-box;
-    width: 100%;
     padding: 0 5px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -196,10 +200,10 @@ body.dashboard-page {
 .input-group { display: flex; gap: 10px; }
 .btn-icon-add {
     background-color: #eef2ff; color: #0d6efd; border: 1px solid #0d6efd;
-    width: 45px; border-radius: 8px; cursor: pointer; font-size: 1.2rem;
+    width: 45px; border-radius: 8px; /* cursor: pointer; */ font-size: 1.2rem;
     display: flex; align-items: center; justify-content: center; transition: 0.2s;
 }
-.btn-icon-add:hover { background-color: #0d6efd; color: white; }
+/* .btn-icon-add:hover { background-color: #0d6efd; color: white; } */
 
 .flavors-area {
     border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px;
@@ -207,7 +211,7 @@ body.dashboard-page {
 }
 .flavor-tag {
     background-color: white; border: 1px solid #ddd; padding: 5px 12px;
-    border-radius: 20px; font-size: 0.85rem; cursor: pointer; user-select: none;
+    border-radius: 20px; font-size: 0.85rem; /* cursor: pointer; */ user-select: none;
     white-space: nowrap; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center;
 }
 .flavor-tag.selected { background-color: #0d6efd; color: white; border-color: #0d6efd; }
@@ -224,14 +228,14 @@ body.dashboard-page {
 }
 
 .btn-add-item {
-    background-color: #333;
+    background-color: #198754;
     color: white;
     width: 100%;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
     font-weight: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 
     padding: 0;
     display: flex;
@@ -239,7 +243,7 @@ body.dashboard-page {
     align-items: center;
     gap: 10px;
 }
-.btn-add-item:hover { background-color: black; }
+/* .btn-add-item:hover { background-color: black; } */
 
 /* Panel Derecho (Ticket) */
 .pos-ticket {
@@ -258,12 +262,12 @@ body.dashboard-page {
 .ticket-table td { padding: 10px 10px; border-bottom: 1px solid #f0f0f0; font-size: 0.9rem; white-space: nowrap;}
 .item-name { font-weight: 600; display: block; color: #333; }
 .item-detail { font-size: 0.75rem; color: #888; }
-.btn-delete { color: #dc3545; background: none; border: none; cursor: pointer; font-size: 1.1rem; }
+.btn-delete { color: #dc3545; background: none; border: none; /* cursor: pointer; */ font-size: 1.1rem; }
 .ticket-footer { padding: 20px; border-top: 2px solid #f0f0f0; background-color: #fff; border-radius: 0 0 12px 12px; }
 .total-row { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: #555; }
 .total-row.final { font-size: 1.4rem; font-weight: bold; color: #333; margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ddd; }
-.btn-checkout { background-color: #198754; color: white; width: 100%; padding: 15px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; margin-top: 15px; transition: 0.3s; }
-.btn-checkout:hover { background-color: #146c43; }
+.btn-checkout { background-color: #198754; color: white; width: 100%; padding: 15px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; /* cursor: pointer; */ margin-top: 15px; transition: 0.3s; }
+/* .btn-checkout:hover { background-color: #146c43; } */
 
 
 /* Scrollbar */
@@ -365,14 +369,14 @@ body.dashboard-page {
     padding: 12px 24px;
     border-radius: 6px;
     font-size: 1rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: 0.2s;
 }
 
-.modal-btn:hover {
+/* .modal-btn:hover {
     background-color: #0b5ed7;
     box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
-}
+} */
 
 /* ESTILOS PARA MODAL DE ÉXITO (SweetAlert Style) */
 
@@ -396,10 +400,10 @@ body.dashboard-page {
 .modal-btn.success {
     background-color: #198754;
 }
-.modal-btn.success:hover {
+/* .modal-btn.success:hover {
     background-color: #157347;
     box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
-}
+} */
 
 /* Chrome, Edge, Safari */
 input[type=number]::-webkit-inner-spin-button,
@@ -463,7 +467,7 @@ input[type=number] {
     border: none;
     padding: 10px 20px;
     border-radius: 6px;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -504,9 +508,9 @@ input[type=number] {
 }
 
 /* Filas alternas y hover */
-.data-table tbody tr:hover {
+/* .data-table tbody tr:hover {
     background-color: #f9fbff;
-}
+} */
 
 /* Estilos de celdas específicas */
 .invoice-id {
@@ -578,9 +582,9 @@ input[type=number] {
     border: 1px solid #ddd;
     border-radius: 6px; /* Un poco más redondeado */
     padding: 6px; /* Ajustamos el padding */
-    cursor: pointer;
+    /* cursor: pointer; */
     margin: 0 2px;
-    transition: all 0.2s ease;
+    /* transition: all 0.2s ease; */
     
     /* Flexbox para centrar perfectamente el icono */
     display: inline-flex;
@@ -595,47 +599,48 @@ input[type=number] {
     width: 18px;  /* Tamaño fijo ancho */
     height: 18px; /* Tamaño fijo alto */
     display: block; /* Elimina espacios fantasma debajo de la imagen */
-    opacity: 0.7; /* Un poco gris por defecto */
-    transition: 0.2s;
+    /* opacity: 0.7; 
+    transition: 0.2s;*/
 }
 
 /* HOVER STATES */
 
 /* Hover genérico */
-.btn-action-icon:hover {
+/* .btn-action-icon:hover {
     background-color: #f8f9fa;
     border-color: #ccc;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
+} */
 
 /* Hover específico: VER (Azul) */
-.btn-action-icon.view:hover {
+/* .btn-action-icon.view:hover {
     border-color: #0d6efd;
     background: #eef2ff;
-}
+} */
 
 /* Hover específico: MODIFICAR (Naranja/Amarillo) */
-.btn-action-icon.modify:hover {
+/* .btn-action-icon.modify:hover {
     border-color: #ffc107;
     background: #fffcec;
-}
+} */
 
 /* Hover específico: IMPRIMIR (Gris oscuro) */
-.btn-action-icon.print:hover {
+/* .btn-action-icon.print:hover {
     border-color: #545454;
     background: #f0f0f0;
-}
+} */
 
 /* Hover específico: ANULAR (Rojo) */
-.btn-action-icon.cancel:hover {
+/* .btn-action-icon.cancel:hover {
     border-color: #dc3545;
     background: #fff8f8;
-}
+} */
 
 /* Hacemos que el ícono se oscurezca al pasar el mouse sobre el botón */
-.btn-action-icon:hover img {
+/* .btn-action-icon:hover img {
     opacity: 1;
-}
+} */
+
 /* FOOTER / PAGINACIÓN */
 .table-footer {
     display: flex;
@@ -660,14 +665,14 @@ input[type=number] {
     background: white;
     padding: 6px 12px;
     border-radius: 4px;
-    cursor: pointer;
+    /* cursor: pointer; */
     color: #555;
     transition: 0.2s;
 }
 
-.page-btn:hover {
+/* .page-btn:hover {
     background-color: #f0f0f0;
-}
+} */
 
 .page-btn.active {
     background-color: #0d6efd;
@@ -787,7 +792,7 @@ textarea.form-input {
     color: white; 
     border: none; 
     border-radius: 6px;
-    cursor: pointer; 
+    /* cursor: pointer; */ 
     transition: 0.2s;
     
     /* Centrado de la imagen */
@@ -797,9 +802,9 @@ textarea.form-input {
     padding: 0;
 }
 
-.btn-small-add:hover {
+/* .btn-small-add:hover {
     background-color: black;
-}
+} */
 
 .btn-small-add img {
     width: 20px;
@@ -833,7 +838,7 @@ textarea.form-input {
 .mini-btn-del {
     background: none; 
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-left: 10px;
     padding: 4px;
     border-radius: 4px;
@@ -842,9 +847,9 @@ textarea.form-input {
     justify-content: center;
 }
 
-.mini-btn-del:hover {
+/* .mini-btn-del:hover {
     background-color: #fff5f5;
-}
+} */
 
 .mini-btn-del img {
     width: 18px;
@@ -852,9 +857,9 @@ textarea.form-input {
     opacity: 0.7;
 }
 
-.mini-btn-del:hover img {
+/* .mini-btn-del:hover img {
     opacity: 1;
-}
+} */
 
 /* Contenedor de Sabores */
 .flavors-container {
@@ -887,7 +892,7 @@ textarea.form-input {
     background: none;
     border: none;
     padding: 0;
-    cursor: pointer;
+    /* cursor: pointer; */
     display: flex;
     align-items: center;
 }
@@ -896,9 +901,9 @@ textarea.form-input {
     height: 14px;
     opacity: 0.6;
 }
-.chip-close-btn:hover img {
+/* .chip-close-btn:hover img {
     opacity: 1;
-}
+} */
 
 /* =========================================
    ESTILOS ESPECÍFICOS DEL DASHBOARD
@@ -922,7 +927,7 @@ textarea.form-input {
     gap: 15px;
     transition: transform 0.2s;
 }
-.stat-card:hover { transform: translateY(-3px); }
+/* .stat-card:hover { transform: translateY(-3px); } */
 
 .stat-icon {
     width: 50px; height: 50px;
