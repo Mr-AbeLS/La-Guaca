@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Usuario - La Guaca</title>
+    <link rel="stylesheet" href="../css/LoginRegister.css" />
+  </head>
+  <body class="login-page">
+    <div class="login-wrapper">
+      <div class="login-container">
+        <div class="div-head-login">
+          <img
+            class="logo"
+            src="../img/LaGuaca-logo-Remastering.png"
+            alt="Logo"
+          />
+          <h1>Crear Usuario</h1>
+        </div>
+
+        <div class="form-container">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px">
+            <div>
+              <label>Nombre</label>
+              <input
+                disabled
+                type="text"
+                class="input error"
+                placeholder="Ej: Juan"
+              />
+              <span class="small-text error">Ingrese Nombre</span>
+            </div>
+            <div>
+              <label>Apellido</label>
+              <input
+                disabled
+                type="text"
+                class="input error"
+                placeholder="Ej: Pérez"
+              />
+              <span class="small-text error">Ingrese Apellido</span>
+            </div>
+          </div>
+
+          <div>
+            <label>Correo Electrónico</label>
+            <input
+              disabled
+              type="text"
+              class="input error"
+              placeholder="ejemplo@correo.com"
+            />
+            <span class="small-text error">Correo Existente</span>
+          </div>
+
+          <div>
+            <label>Número de Cédula</label>
+            <input
+              disabled
+              type="text"
+              class="input error"
+              placeholder="V-12345678"
+            />
+            <span class="small-text error">C.I Existente</span>
+          </div>
+
+          <div>
+            <label style="color: #d9534f">Llave de Acceso Maestra</label>
+            <input
+              type="password"
+              placeholder="Solo para uso interno"
+              style="border-color: #d9534f; background-color: #fff5f5"
+              class="input error"
+            />
+            <span class="small-text error">Llave Incorrecta</span>
+          </div>
+
+          <div>
+            <label>Contraseña</label>
+            <input
+              disabled
+              type="password"
+              class="input error"
+              placeholder="Mínimo 8 caracteres"
+            />
+            <span class="small-text error">Contraseña Obligatoria</span>
+          </div>
+
+          <div class="button-login">
+            <button type="button" class="btn-primary">Registrar Usuario</button>
+          </div>
+
+          <div class="text-center">
+            <span>¿Ya tienes cuenta? </span>
+            <span class="link-action">Inicia sesión</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

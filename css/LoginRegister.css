@@ -96,6 +96,12 @@ body {
   transition: all 0.2s ease;
 }
 
+.input.error {
+  border-color: #dc3545 !important;
+  background-color: #fff8f8;
+  color: #dc3545;
+}
+
 /* Efecto visual de foco */
 .form-container input:focus {
   outline: none;
@@ -155,4 +161,9 @@ body {
   font-size: 0.85rem;
   color: #666;
   margin-top: 5px;
+}
+
+.small-text.error {
+  font-size: 0.8rem;
+  color: #c73636;
 }
