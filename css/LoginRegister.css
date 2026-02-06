@@ -34,6 +34,9 @@ body {
 }
 
 .login-container {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 12px;
   width: 100%;
@@ -72,6 +75,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  flex: 1;
+  justify-content: center;
 }
 
 .form-container div {
@@ -164,6 +169,9 @@ body {
 }
 
 .small-text.error {
+  display: block;
+  min-height: 20px;
+  margin-top: 4px;
   font-size: 0.8rem;
   color: #c73636;
 }

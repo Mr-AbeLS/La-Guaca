@@ -410,18 +410,19 @@ body.dashboard-page {
   width: 50%;
   white-space: normal;
   line-height: 1.1;
+  text-align: left;
 }
 .col-qty {
   width: 15%;
-  text-align: center;
+  text-align: center !important;
 }
 .col-total {
   width: 20%;
-  text-align: right;
+  text-align: right !important;
 }
 .col-actions {
   width: 20%;
-  text-align: center;
+  text-align: center !important;
 }
 .ticket-table td {
   padding: 10px 10px;
@@ -429,6 +430,14 @@ body.dashboard-page {
   font-size: 0.9rem;
   white-space: nowrap;
 }
+/* Asegura que los datos de la tabla sigan la misma regla */
+.ticket-table td:nth-child(2) {
+  text-align: center;
+} /* Columna Cantidad */
+.ticket-table td:nth-child(3) {
+  text-align: right;
+} /* Columna Precio */
+
 .item-name {
   font-weight: 600;
   display: block;
